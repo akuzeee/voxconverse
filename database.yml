@@ -1,0 +1,16 @@
+Databases:
+  VOXCONVERSE: ./wav/{uri}.wav
+
+
+Protocols:
+  VOXCONVERSE:
+    SpeakerDiarization:
+      only_words:
+        train:
+          uri: ./lists/train.txt
+          annotation: ./rttm/{uri}.rttm
+          annotated: ./{uri}.uem
+        development:
+          uri: ./lists/val.txt
+          annotation: ./rttm/{uri}.rttm
+          annotated: ./uems/{uri}.uem
